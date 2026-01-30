@@ -1,14 +1,14 @@
-// let taxRate = 9;
+let taxRate = 9;
 
-// taxRate = 2;
+taxRate = 2;
 
-// console.log(taxRate);
+console.log(taxRate);
 
-// const taxRate;
+// const taxRate; // raise error
 
-// taxRate = 2;
+taxRate = 2;
 
-// console.log(taxRate);
+console.log(taxRate);
 
 // =============================================================================
 
@@ -36,7 +36,7 @@ cars.push("Audi");
 // ================================================================   Constant Objects
 // You can change the properties of a constant object:
 // You can create a const object:
-const car = {type:"Fiat", model:"500", color:"white"};
+const car = { type: "Fiat", model: "500", color: "white" };
 
 // You can change a property:
 car.color = "red";
@@ -45,6 +45,6 @@ car.color = "red";
 car.owner = "Johnson";
 // But you can NOT reassign the object:
 
-const car = {type:"Fiat", model:"500", color:"white"};
+const car2 = { type: "Fiat", model: "500", color: "white" };
 
-car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
+// car2 = { type: "Volvo", model: "EX60", color: "red" };    // ERROR

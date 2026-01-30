@@ -101,12 +101,12 @@
 
 // console.log(i);
 
-let obj = {
-    name: 'masoud',
-    age: 35
-}
+// let obj1 = {
+//     name: 'masoud',
+//     age: 35
+// }
 
-let arr = [1, 2, 3];
+// let arr = [1, 2, 3];
 
 // for (let key in arr) {
 //     console.log(key + '::' + arr[key]);
@@ -129,14 +129,14 @@ let arr = [1, 2, 3];
 // }
 // let index = 0;
 // while (a< 10) {
-    
+
 
 
 //     index++;
 // }
 
 // do {
-    
+
 // } while (condition);
 
 
@@ -150,21 +150,21 @@ for (let index = 0; index < 10; index++) {
         continue;
     }
     // ...
-    
+
 }
 
 // 2 max & min (ternary operator)
 // > 2 => loop max & min
 // obj {name, age}
 
-let o1 = {name: 'a', age: 33}
-let o2 = {name: 'b', age: 29}
+// let o1 = { name: 'a', age: 33 }
+// let o2 = { name: 'b', age: 29 }
 
 
-function max(arr){
-    // ...
+// function max(arr) {
+//     // ...
 
-}
+// }
 
 
 // let dm = new dateManager();

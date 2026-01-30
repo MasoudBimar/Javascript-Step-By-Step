@@ -1,8 +1,8 @@
 // Math
-let num = 123.823456789;
-let roundedNum = Math.round(num);
-let num2 = Math.ceil(num);
-let num3 = Math.floor(num);
+// let num = 123.823456789;
+// let roundedNum = Math.round(num);
+// let num2 = Math.ceil(num);
+// let num3 = Math.floor(num);
 // console.log(roundedNum);
 // console.log(num2);
 // console.log(num3);
@@ -17,7 +17,7 @@ let num3 = Math.floor(num);
 // console.log(Math.round(Math.random() * 500));
 
 // Sting
-let s = "      My name my is masoud    "; // my, MY, My, mY
+// let s = "      My name my is masoud    "; // my, MY, My, mY
 // console.log(s.toUpperCase());
 // console.log(s.toLowerCase());
 // console.log(s.length);
@@ -43,5 +43,5 @@ const now = new Date();
 // console.log(now.toDateString());
 // console.log(now.toLocaleDateString());
 // console.log(now.toISOString());
-const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 console.log(now.toLocaleDateString('en-US', options));

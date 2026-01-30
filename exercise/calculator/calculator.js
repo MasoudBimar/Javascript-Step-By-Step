@@ -1,3 +1,4 @@
+
 let display = document.getElementById('result');
 
 function appendNumber(num) {
@@ -27,7 +28,14 @@ function calculate() {
     try {
         display.value = eval(display.value);
     } catch (error) {
+        console.log(error);
         display.value = 'Error';
         setTimeout(clearDisplay, 1000);
     }
 }
+
+window.appendNumber = appendNumber;
+window.appendOperator = appendOperator;
+window.clearDisplay = clearDisplay;
+window.deleteLastChar = deleteLastChar;
+window.calculate = calculate;

@@ -1,6 +1,6 @@
 // Compare
-    // Equality
-    // Inequality
+// Equality
+// Inequality
 
 // boolean (true, false)
 // 
@@ -49,13 +49,15 @@
 // !=
 // !==
 
-// if(1 != '1'){
-//     console.log('not equals !=');
-// }
+let num1 = 1;
+let str1 = '1';
+if (num1 != str1) {
+    console.log('not equals !=');
+}
 
-// if(1 !== '1'){
-//     console.log('not equals !==');
-// }
+if (num1 !== str1) {
+    console.log('not equals !==');
+}
 
 // a(23) ====> (500)  ==> {val: 42}
 // b(24) ====> (500)  ==
@@ -63,16 +65,17 @@
 // d(26) ====> 2
 
 // Equality
-// let a = {val: 42};
-// let b = a;
-// let c = 1;
-// let d = 2;
-// object   equality by refrence 
-// if (a == b) {
-//     console.log('equals');
-// } else {
-//     console.log('not equals');
-// }
+let a1 = { val: 42 };
+let b2 = a;
+let c3 = 1;
+let d4 = 2;
+
+// object   equality by refrence
+if (a1 == b2) {
+    console.log('equals');
+} else {
+    console.log('not equals');
+}
 
 // let a = [1,2,3];
 // let b = [1,2,3];
@@ -105,25 +108,25 @@
 
 
 // Operator
-    // Arithmetic
-                                                                        // Assignment
-                                                                        // Comparison
-                                                                        // Logical
-                                                                        // Bitwise
-// let x = 10;
-// let y = 3;
+// Arithmetic
+// Assignment
+// Comparison
+// Logical
+// Bitwise
+let x = 10;
+let y = 3;
 
-// console.log(x + y);
-// console.log(x - y);
-// console.log(x * y);
-// console.log(x ** y);
-// console.log(x / y);
-// console.log(x % y);
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x ** y);
+console.log(x / y);
+console.log(x % y);
 
-// console.log(x++);
-// console.log(x--);
-// console.log(++x);
-// console.log(--x);
+console.log(x++);
+console.log(x--);
+console.log(++x);
+console.log(--x);
 
 // let a = 3;
 // let b = 10;

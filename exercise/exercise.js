@@ -30,7 +30,7 @@
 function fibunacci3(n) {
   let n0 = 0;
   let n1 = 1;
-  nextTerm = 0;
+  let nextTerm = 0;
   for (let i = 1; i <= n; i++) {
     nextTerm = n0 + n1;
     n0 = n1;
@@ -40,12 +40,14 @@ function fibunacci3(n) {
   console.log(n0);
 }
 
-// console.log(fibunacci3(100));
+
+console.log(fibunacci3(100));
 // 0,1,1,2,3,5,8
 // 0,1,2,3,4,5,6
 // F(n) = F(n-1)+F(n-2);
 
-if (assadf) {
+let expression = false;
+if (expression) {
   // ...
   // ...
 } else {

@@ -1,4 +1,4 @@
-// Cannot be Redeclared //////////////////////
+// Cannot be Redeclared 
 
 // let x = "John Doe";
 
@@ -11,7 +11,7 @@
 
 // var x = 0;
 
-// Block Scope //////////////////////
+// Block Scope 
 
 // Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
 // ES6 introduced two important new JavaScript keywords: let and const.
@@ -29,14 +29,14 @@ console.log(y);
 console.log(x);
 console.log(y);
 
-// Redecalring variable with var  //////////////////////
+// Redecalring variable with var  
 
 var x = 10;
 // Here x is 10
 
 {
-var x = 2;
-// Here x is 2
+    var x = 2;
+    // Here x is 2
 }
 
 // Here x is 2

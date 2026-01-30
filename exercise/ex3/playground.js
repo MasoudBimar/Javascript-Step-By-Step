@@ -17,6 +17,7 @@ window.onload = function () {
   for (let i = 0; i < frms.length; i++) {
     text += frms.elements[i].value + "<br>";
   }
+  console.log(text);
   document.getElementById("submitBtn").onclick = function () {
     alert("button clicked");
   };
@@ -30,11 +31,3 @@ window.onload = function () {
   //   document.getElementById("thirdP").style.fontSi
 };
 
-// Modern Javascript
-
-// OOP {}
-// protoType
-// ES6 Class
-// asyn/await
-// promise
-// closure

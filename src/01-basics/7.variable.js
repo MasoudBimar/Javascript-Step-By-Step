@@ -41,8 +41,8 @@
 
 
 // Type Method => String, Number, Boolean
-// console.log(a.toLocaleUpperCase());
-// console.log(typeof Number(5));
+console.log(a.toLocaleUpperCase());
+console.log(typeof Number(5));
 
 // string str = 'masoud';
 
@@ -50,62 +50,62 @@
 // Array
 // Function
 
-// let obj = {
-//     name: 'masoud', // Writable, Configurable
-//     lastName: 'karimi',
-//     age: 25,
-//     fullName: function(){ // Method
-//         return this.name +' '+ this.lastName;
-//     }
+let obj = {
+    name: 'masoud', // Writable, Configurable
+    lastName: 'karimi',
+    age: 25,
+    fullName: function () { // Method
+        return this.name + ' ' + this.lastName;
+    }
 
-// }
-// let a = 5;
-// console.log(obj.fullName());
-// console.log(a)
-// let propName = 'lastName';
-// obj[propName]
-// console.log(obj['name'] + obj['lastName']); //namelastName
+}
+let a = 5;
+console.log(obj.fullName());
+console.log(a)
+let propName = 'lastName';
+obj[propName]
+console.log(obj['name'] + obj['lastName']); //namelastName
 
 
-// let obj = {
-//     a : 5,
-//     outer: function(){ // this => object
-//         let x = {
-//             y : 5,
-//             inner: function(){
-//                 // this.
-//             }
-//         }
-//         return {
+let obj1 = {
+    a: 5,
+    outer: function () { // this => object
+        let x = {
+            y: 5,
+            inner: function () {
+                // this.
+            }
+        }
+        return {
 
-//         }
-//     }
-// }
+        }
+    }
+}
 
 // Arrays
 
-// let obj =
-// {
-//     name: 'masoud',
-//     lastName: 'karimi',
-//     age: 25
-// }
-// console.log(obj['name']);
+let obj2 =
+{
+    name: 'masoud',
+    lastName: 'karimi',
+    age: 25
+}
+console.log(obj['name']);
 
-// let arr = ['ali', 4, true];
-// console.log(typeof arr);
+let arr = ['ali', 4, true];
+console.log(typeof arr);
 
 
 function func() {
     console.log('test');
 }
 
-// console.log(typeof func);
+console.log(typeof func);
 
-// function func2(f){
-//     console.log('inside func2');
-//     f();
-// }
+function func2(f) {
+    console.log('inside func2');
+    f();
+}
 
 // func2(func);
 

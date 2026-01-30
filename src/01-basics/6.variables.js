@@ -2,8 +2,8 @@ let name;
 console.log(name); // undefined
 
 
-let name = 'Masoud';
-console.log(name); 
+let name2 = 'Masoud';
+console.log(name2);
 
 // Connot be reserve keyword
 // let if = 'Masoud';
@@ -20,6 +20,6 @@ let x = 'Masoud';
 // its better to decalre each var on a single line
 
 // notation
-    // camel-Case
-    // Pascal-Case
-    // Kebab-Case
+// camel-Case
+// Pascal-Case
+// Kebab-Case
