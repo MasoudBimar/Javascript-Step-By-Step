@@ -1,4 +1,4 @@
-// Destructuring
+//? Destructuring
 // let x = 2;
 // let y = 3;
 
@@ -16,7 +16,7 @@ let b = 2;
 // const { ['key']: x} = obj;
 // console.log(p, q);
 
-// Template Literal
+//? Template Literal
 
 // let category = "music";
 
@@ -157,31 +157,31 @@ class Triangle extends Shape {
         this.t = t;
     }
 
-    draw(){ // Override
+    draw() { // Override
         console.log('drawwwwing this is my t', this.t);
     }
 }
 
 // let t = new Square(2,3);
-let t = new Triangle(4,5)
+let t = new Triangle(4, 5)
 t.draw();
 
 
 // Person => Employee => Manager => Execute
 
 
-class Animal{
+class Animal {
 
-    move(){
+    move() {
 
     }
 }
 
-class Tiger{} // Run
+class Tiger { } // Run
 
-class Bird{} // Fly
+class Bird { } // Fly
 
-class Fish{} // swim
+class Fish { } // swim
 
 
 // let numbers = [1,2,3]; // iterable
