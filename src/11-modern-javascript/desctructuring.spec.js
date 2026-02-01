@@ -1,7 +1,7 @@
 import { describe, test, expect, it } from "vitest";
 
 describe('destructring', () => {
-    it('can destructure arrays', () => {
+    it('should destructure arrays', () => {
         let doSth = () => {
             return [1, 2, 3];
         };
@@ -13,7 +13,7 @@ describe('destructring', () => {
         expect(z).toBeUndefined();
     });
 
-    it('can destructure objects', () => {
+    it('should destructure objects', () => {
         let getUser = () => {
             return {
                 firstName: 'Masoud',
@@ -25,6 +25,27 @@ describe('destructring', () => {
             lastName: definedLastName } = getUser();
 
         expect(definedFirstName).toBe('Masoud');
+
+
+    });
+
+    it('should destructure objects with nested props', () => {
+        let getUser = () => {
+            return {
+                firstName: 'Masoud',
+                lastName: 'Bimmer',
+                contact: {
+                    email: 'masoudbimar@gmail.com'
+                }
+            };
+        };
+        let { firstName: definedFirstName,
+            lastName: definedLastName, contact: { email: mailAddress } } = getUser();
+
+        expect(definedFirstName).toBe('Masoud');
+        expect(definedLastName).toBe('Bimmer');
+        expect(mailAddress).toBe('masoudbimar@gmail.com');
+
 
 
     });
