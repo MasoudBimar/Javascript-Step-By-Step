@@ -63,5 +63,5 @@ const another4 = cloneObject(circle);
 another4.location.x = 444;
 console.log(another4, circle);
 
-// Shallow Copy => for-in, object.assign, spred opr
+// Shallow Copy => for-in, object.assign, spread opr
 // Deep Copy => my recursion function
