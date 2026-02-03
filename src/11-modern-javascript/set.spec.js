@@ -46,7 +46,7 @@ describe('Set', () => {
     });
 
 
-    it("should have no item after clear", () => {
+    it("should remove an item when delete is called", () => {
         let set = new Set();
         set.add(1);
         set.add(2);
