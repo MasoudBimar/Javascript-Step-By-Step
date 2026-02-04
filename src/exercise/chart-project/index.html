@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Urban Insights Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="brand">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <div>
+                    <h1>Urban Insights Dashboard</h1>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="ghost" type="button">Last 30 days</button>
+                <button class="primary" type="button">Export Report</button>
+            </div>
+        </header>
+
+        <div class="layout">
+            <aside class="sidebar">
+                <nav aria-label="Primary">
+                    <h2 class="section-title">Cities</h2>
+                    <ul class="nav-list">
+                        <li><a aria-current="page" onclick="changeCity('London', event)">London</a></li>
+                        <li><a href="#" onclick="changeCity('Paris', event)">Paris</a></li>
+                        <li><a href="#" onclick="changeCity('Tokyo', event)">Tokyo</a></li>
+                        <li><a href="#" onclick="changeCity('NewYork', event)">New York</a></li>
+                    </ul>
+                </nav>
+
+                <section class="filters" aria-labelledby="filters-title">
+                    <h2 id="filters-title" class="section-title">Filters</h2>
+                    <form>
+                        <label class="field">
+                            <span>Metric Focus</span>
+                            <select name="metric">
+                                <option value="mobility">Mobility</option>
+                                <option value="economy">Economy</option>
+                                <option value="energy">Energy</option>
+                            </select>
+                        </label>
+                        <label class="field">
+                            <span>Region</span>
+                            <select name="region">
+                                <option value="europe">Europe</option>
+                                <option value="asia">Asia</option>
+                                <option value="north-america">North America</option>
+                            </select>
+                        </label>
+                        <button class="primary" type="submit">Apply Filters</button>
+                    </form>
+                </section>
+
+                <section class="quick-stats" aria-labelledby="stats-title">
+                    <h2 id="stats-title" class="section-title">Highlights</h2>
+                    <div class="stat">
+                        <p class="stat-label">Total Riders</p>
+                        <p class="stat-value">18.4M</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-label">Average Growth</p>
+                        <p class="stat-value">+6.2%</p>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="content">
+                <section class="charts" aria-labelledby="charts-title">
+                    <header class="section-header">
+                        <div>
+                            <h2 id="charts-title">Performance Snapshot</h2>
+                        </div>
+                        <div class="chip-group" role="list">
+                            <span class="chip" role="listitem">Realtime</span>
+                            <span class="chip" role="listitem">Forecast</span>
+                            <span class="chip" role="listitem">Benchmarks</span>
+                        </div>
+                    </header>
+
+                    <div class="chart-grid">
+                        <article class="card card--wide">
+                            <header class="card-header">
+                                <div>
+                                    <p class="eyebrow">Mobility</p>
+                                    <h3>Daily Transit Volume</h3>
+                                </div>
+                                <button class="ghost" type="button">View Details</button>
+                            </header>
+                            <figure class="chart">
+                                <canvas id="trafficChart" aria-label="Daily transit volume line chart" role="img"></canvas>
+                                <figcaption>Ridership growth stabilizes after weekend peaks.</figcaption>
+                            </figure>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <div>
+                                    <p class="eyebrow">Infrastructure</p>
+                                    <h3>Expansion Pipeline</h3>
+                                </div>
+                                <button class="ghost" type="button">Compare</button>
+                            </header>
+                            <figure class="chart">
+                                <canvas id="expansionChart" aria-label="Expansion pipeline bar chart" role="img"></canvas>
+                                <figcaption>Projects focus on high-demand corridors.</figcaption>
+                            </figure>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <div>
+                                    <p class="eyebrow">Sustainability</p>
+                                    <h3>Energy Mix</h3>
+                                </div>
+                                <button class="ghost" type="button">View Split</button>
+                            </header>
+                            <figure class="chart">
+                                <canvas id="energyChart" aria-label="Energy mix doughnut chart" role="img"></canvas>
+                                <figcaption>Renewables are now the dominant share.</figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- <section class="insights" aria-labelledby="insights-title">
+                    <header class="section-header">
+                        <div>
+                            <h2 id="insights-title">Key Insights</h2>
+                            <p>Short signals to guide planning and operations this week.</p>
+                        </div>
+                    </header>
+                    <div class="insight-grid">
+                        <article class="insight">
+                            <h3>Peak Hour Shift</h3>
+                            <p>Morning demand is moving 20 minutes earlier across downtown routes.</p>
+                        </article>
+                        <article class="insight">
+                            <h3>Capital Allocation</h3>
+                            <p>Paris and Tokyo now account for 54% of the new build pipeline.</p>
+                        </article>
+                        <article class="insight">
+                            <h3>Energy Efficiency</h3>
+                            <p>Fleet electrification improved overall efficiency by 12% quarter to date.</p>
+                        </article>
+                    </div>
+                </section> -->
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
