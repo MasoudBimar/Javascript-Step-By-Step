@@ -1,5 +1,13 @@
 import { describe, it, expect } from "vitest";
 
+/** Map vs Object:
+ * 1- Map can have keys of any type (object, function, primitive types) while Object keys are strings or symbols.
+ * 2- Map maintains the order of insertion of key-value pairs, while Object does not guarantee order.
+ * 3- Map has a size property to get the number of key-value pairs, while Object requires manual counting.
+ * 4- Map is generally more efficient for frequent additions and deletions of key-value pairs compared to Object.
+ * 5- Map value can be anything, including functions, objects, and primitive types. Object values can also be anything.
+ */
+
 
 describe('Map', () => {
     it("should contain zero items when constructed", () => {
