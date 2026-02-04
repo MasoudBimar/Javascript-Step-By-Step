@@ -30,7 +30,7 @@ body {
     background: radial-gradient(circle at top, #fff5e6 0%, var(--bg) 45%, #ece4da 100%);
     color: var(--text);
     min-height: 100vh;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 h1,
@@ -136,7 +136,7 @@ select:focus-visible {
     display: grid;
     grid-template-columns: minmax(220px, 280px) 1fr;
     gap: 24px;
-    padding: 24px 6vw 40px;
+    padding: 12px 6vw 20px;
     flex: 1;
     min-height: 0;
     align-items: stretch;
@@ -219,7 +219,7 @@ select {
 .stat {
     background: var(--surface-muted);
     border-radius: var(--radius-sm);
-    padding: 14px 16px;
+    padding: 10px 14px;
 }
 
 .stat-label {
@@ -309,7 +309,7 @@ select {
 }
 
 .card--wide .chart {
-    height: clamp(200px, 34vw, 320px);
+    height: clamp(200px, 34vw, 300px);
 }
 
 .chart figcaption {

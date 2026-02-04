@@ -6,6 +6,7 @@ import { describe, it, expect } from "vitest";
  * 3- Map has a size property to get the number of key-value pairs, while Object requires manual counting.
  * 4- Map is generally more efficient for frequent additions and deletions of key-value pairs compared to Object.
  * 5- Map value can be anything, including functions, objects, and primitive types. Object values can also be anything.
+ * 6- Map Inherited from Object, but does not have default keys like Object.prototype.
  */
 
 
