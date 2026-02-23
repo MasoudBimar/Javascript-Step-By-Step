@@ -139,6 +139,12 @@ Notes:
 
 Caution: `let` cannot be redeclared in the same scope.
 
+What is the difference between let, const, and var?
+
+- `var`: Function-scoped, allows redeclaration, hoisted with undefined.
+- `let`: Block-scoped, no redeclaration, hoisted but not initialized.
+- `const`: Block-scoped, no redeclaration, and must be initialized during declaration.
+
 ## Section 5 - Accessing Variables Before Declaration
 
 Topic: differences between `var`, `let`, and `const` when used before declaration.
@@ -249,6 +255,11 @@ Best practices:
 - Convert types explicitly when needed (`Number()`, `String()`).
 
 Note: Non-boolean values are coerced to boolean in conditions.
+
+Explain how == and === differ:
+
+- `==` checks for value equality with type coercion.
+- `===` checks for strict equality without type coercion
 
 Caution: `==` can lead to surprising results with type coercion.
 
@@ -368,3 +379,17 @@ Best practices:
 Note: Style guidelines improve readability and collaboration.
 
 Caution: Mixing naming styles in one project makes code harder to scan.
+
+## Section 12 - Hoisting
+
+Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope during
+compilation
+
+```js
+console.log(a); // hoisted
+var a = 5;
+```
+
+## Section 13 - this
+
+this refers to the context in which a function is executed. Its value depends on how the function is called.
