@@ -70,6 +70,8 @@ describe('WeakMap', () => {
 
     it('should be able to find items with has', () => {
         let weakMap = new WeakMap();
+        //! WeakMap Keys must be objects (not primitives)
+        //! WeakMap is not Iterable
         let item = { name: 'Joe' };
         weakMap.set(item, 35);
 
