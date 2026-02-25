@@ -286,3 +286,51 @@ setInterval(() => {
   console.log("This runs every 2 seconds");
 }, 2000);
 ```
+
+### First Success Within Timeout Challenge
+
+```js
+const never = new Promise(() => {}); // همیشه pending
+
+const driver1 = new Promise((resolve, reject) => setTimeout(() => reject({ driver: "ali", car: "benz" }), 1000)).catch(() => never);
+
+const driver2 = new Promise((resolve) => setTimeout(() => resolve({ driver: "reza", car: "audi" }), 2000)).catch(() => never);
+
+const driver3 = new Promise((resolve) => setTimeout(() => resolve({ driver: "hasan", car: "bmw" }), 3000)).catch(() => never);
+
+const timeout = new Promise((_, reject) => {
+  setTimeout(() => reject(new Error("try again")), 5000);
+});
+
+Promise.race([driver1, driver2, driver3, timeout])
+  .then((result) => {
+    if (result) {
+      console.log(`This trip allocated by ${result.driver}`);
+    } else {
+      throw new Error("noone accepts the request");
+    }
+  })
+  .catch((error) => console.error(error.message));
+```
+
+better implementation of the above code:
+
+```js
+const never = new Promise(() => {}); // pending forever
+
+const acceptOnly = (p) => p.then((res) => (res.status === "accepted" ? res : never)).catch(() => never); // ignore errors too
+
+const driver1 = new Promise((resolve) => setTimeout(() => resolve({ status: "rejected", driver: "ali", car: "benz" }), 1000));
+
+const driver2 = new Promise((resolve) => setTimeout(() => resolve({ status: "rejected", driver: "reza", car: "audi" }), 2000));
+
+const driver3 = new Promise((resolve) => setTimeout(() => resolve({ status: "accepted", driver: "hasan", car: "bmw" }), 3000));
+
+const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error("try again")), 5000));
+
+Promise.race([acceptOnly(driver1), acceptOnly(driver2), acceptOnly(driver3), timeout])
+  .then((winner) => {
+    console.log(`This trip allocated by ${winner.driver}`);
+  })
+  .catch((e) => console.error(e.message));
+```
