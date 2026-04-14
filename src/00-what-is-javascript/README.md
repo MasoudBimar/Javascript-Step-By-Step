@@ -45,3 +45,23 @@ ECMAScript is the official name of the specification.
 Older versions are abbreviated as ES1, ES2, ES3, ES5, and ES6.
 
 Starting in 2015, ECMAScript versions are named by year (for example: ECMAScript 2015).
+
+comparison table ECMAScript versions:
+
+| ES Version | Official Name   | Description                     |
+| ---------- | --------------- | ------------------------------- |
+| ES1        | ECMAScript 1    | Initial version                 |
+| ES2        | ECMAScript 2    | Minor updates                   |
+| ES3        | ECMAScript 3    | regular expressions, try/catch  |
+| ES5        | ECMAScript 5    | Added strict mode, Type methods |
+| ES6        | ECMAScript 2015 | Major update with new features  |
+| ES7        | ECMAScript 2016 | Minor update                    |
+| ES8        | ECMAScript 2017 | Minor update                    |
+| ES9        | ECMAScript 2018 | Minor update                    |
+| ES10       | ECMAScript 2019 | Minor update                    |
+| ES11       | ECMAScript 2020 | Minor update                    |
+| ES12       | ECMAScript 2021 | Minor update                    |
+| ES13       | ECMAScript 2022 | Minor update                    |
+| ES14       | ECMAScript 2023 | Minor update                    |
+
+[JavaScript Versions vs ECMAScript](https://www.w3schools.com/js/js_versions.asp)
